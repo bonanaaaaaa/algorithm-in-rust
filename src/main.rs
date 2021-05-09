@@ -1,4 +1,6 @@
-mod knapsack;
+extern crate algorithm_in_rust;
+
+use algorithm_in_rust::knapsack;
 
 fn main() {
     let limit = 20;

@@ -23,3 +23,17 @@ pub fn dynamic_programming(items: Vec<(i32, i32)>, limit: i32) -> i32 {
     }
     max_value
 }
+
+#[cfg(test)]
+mod tests {
+  use super::*;
+
+  #[test]
+  fn test_knapsack() {
+    let limit = 20;
+    let items = vec![(10, 8), (15, 6), (8, 11), (5, 5)];
+    let actual = dynamic_programming(items, limit);
+
+    assert_eq!(actual, 19);
+  }
+}
